@@ -1,15 +1,3 @@
-/**
-* Template Name: Maundy
-* Template URL: https://bootstrapmade.com/maundy-free-coming-soon-bootstrap-theme/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Roboto",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -22,7 +10,7 @@
   --background-color: #ffffff; /* Background color for the entire website, including individual sections */
   --default-color: #ffffff; /* Default color used for the majority of the text content across the entire website */
   --heading-color: #000000; /* Color for headings, subheadings and title throughout the website */
-  --accent-color: #24b7a4; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
+  --accent-color: #ffdf00; /* Accent color that represents your brand on the website. It's used for buttons, links, and other elements that need to stand out */
   --surface-color: #ffffff; /* The surface color is used as a background of boxed elements within sections, such as cards, icon boxes, or other elements that require a visual separation from the global background. */
   --contrast-color: #ffffff; /* Contrast color for text, ensuring readability against backgrounds of accent, heading, or default colors. */
 }
@@ -109,58 +97,6 @@ h5,
 h6 {
   color: var(--heading-color);
   font-family: var(--heading-font);
-}
-
-/* PHP Email Form Messages
-------------------------------*/
-.php-email-form .error-message {
-  display: none;
-  background: #df1529;
-  color: #ffffff;
-  text-align: left;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .sent-message {
-  display: none;
-  color: #ffffff;
-  background: #059652;
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-  font-weight: 600;
-}
-
-.php-email-form .loading {
-  display: none;
-  background: var(--surface-color);
-  text-align: center;
-  padding: 15px;
-  margin-bottom: 24px;
-}
-
-.php-email-form .loading:before {
-  content: "";
-  display: inline-block;
-  border-radius: 50%;
-  width: 24px;
-  height: 24px;
-  margin: 0 10px -6px 0;
-  border: 3px solid var(--accent-color);
-  border-top-color: var(--surface-color);
-  animation: php-email-form-loading 1s linear infinite;
-}
-
-@keyframes php-email-form-loading {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* ----------------------
@@ -331,6 +267,7 @@ animation-delay: 9.5s;
 
 .header .logo {
   line-height: 1;
+  margin: 20px 0 0 0;
 }
 
 .header .logo img {
@@ -680,145 +617,12 @@ animation-delay: 9.5s;
 }
 
 /*--------------------------------------------------------------
-# Scroll Top Button
---------------------------------------------------------------*/
-.scroll-top {
-  position: fixed;
-  visibility: hidden;
-  opacity: 0;
-  right: 15px;
-  bottom: -15px;
-  z-index: 99999;
-  background-color: var(--accent-color);
-  width: 44px;
-  height: 44px;
-  border-radius: 50px;
-  transition: all 0.4s;
-}
-
-.scroll-top i {
-  font-size: 24px;
-  color: var(--contrast-color);
-  line-height: 0;
-}
-
-.scroll-top:hover {
-  background-color: color-mix(in srgb, var(--accent-color), transparent 20%);
-  color: var(--contrast-color);
-}
-
-.scroll-top.active {
-  visibility: visible;
-  opacity: 1;
-  bottom: 15px;
-}
-
-/*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
 @media screen and (max-width: 768px) {
   [data-aos-delay] {
     transition-delay: 0 !important;
   }
-}
-
-/*--------------------------------------------------------------
-# Global Page Titles & Breadcrumbs
---------------------------------------------------------------*/
-.page-title {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  position: relative;
-}
-
-.page-title .heading {
-  padding: 80px 0;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.page-title .heading h1 {
-  font-size: 38px;
-  font-weight: 700;
-}
-
-.page-title nav {
-  background-color: color-mix(in srgb, var(--default-color), transparent 95%);
-  padding: 20px 0;
-}
-
-.page-title nav ol {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin: 0;
-  font-size: 16px;
-  font-weight: 600;
-}
-
-.page-title nav ol li+li {
-  padding-left: 10px;
-}
-
-.page-title nav ol li+li::before {
-  content: "/";
-  display: inline-block;
-  padding-right: 10px;
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-/*--------------------------------------------------------------
-# Global Sections
---------------------------------------------------------------*/
-section,
-.section {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  padding: 60px 0;
-  scroll-margin-top: 90px;
-  overflow: clip;
-  position: relative;
-}
-
-@media (max-width: 1199px) {
-
-  section,
-  .section {
-    scroll-margin-top: 66px;
-  }
-}
-
-/*--------------------------------------------------------------
-# Global Section Titles
---------------------------------------------------------------*/
-.section-title {
-  text-align: center;
-  padding-bottom: 60px;
-  position: relative;
-}
-
-.section-title h2 {
-  font-size: 32px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  position: relative;
-}
-
-.section-title h2:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 50px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-}
-
-.section-title p {
-  margin-bottom: 0;
 }
 
 /*--------------------------------------------------------------
@@ -839,13 +643,14 @@ section,
   margin: 0;
   font-size: 48px;
   font-weight: 700;
+  color: white;
 }
 
 .hero p {
   margin: 10px 0 0 0;
-  font-size: 24px;
+  font-size: 22px;
   /* color: var(--heading-color); */
-  color: rgb(212, 171, 37);
+  color: #ffdf00;
 }
 
 @media (max-width: 768px) {
@@ -864,7 +669,7 @@ section,
 
 .hero .countdown div {
   text-align: center;
-  border: 2px solid color-mix(in srgb, var(--default-color), rgb(185, 147, 20) 90%);
+  border: 2px solid color-mix(in srgb, var(--default-color), #ffdf00 90%);
   border-radius: 8px;
   margin: 10px 10px;
   width: 100px;
@@ -875,11 +680,13 @@ section,
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 15px;
+  color: #ffffff;
 }
 
 .hero .countdown div h4 {
   font-size: 16px;
   font-weight: 600;
+  color: #ffffff;
 }
 
 @media (max-width: 575px) {
@@ -898,58 +705,6 @@ section,
     font-size: 14px;
     font-weight: 500;
   }
-}
-
-.hero .hero-newsletter {
-  margin-top: 25px;
-}
-
-.hero .hero-newsletter p {
-  font-size: 18px;
-  margin: 0 0 15px 0;
-}
-
-.hero .hero-newsletter .newsletter-form {
-  margin-bottom: 15px;
-  padding: 6px 8px;
-  position: relative;
-  background-color: var(--surface-color);
-  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-  box-shadow: 0px 0 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-.hero .hero-newsletter .newsletter-form:focus-within {
-  border-color: var(--accent-color);
-}
-
-.hero .hero-newsletter .newsletter-form input[type=email] {
-  border: 0;
-  padding: 4px;
-  width: 100%;
-  background-color: var(--surface-color);
-  color: var(--default-color);
-}
-
-.hero .hero-newsletter .newsletter-form input[type=email]:focus-visible {
-  outline: none;
-}
-
-.hero .hero-newsletter .newsletter-form input[type=submit] {
-  border: 0;
-  font-size: 16px;
-  padding: 0 20px;
-  margin: -7px -9px -7px 0;
-  background: var(--accent-color);
-  color: var(--contrast-color);
-  transition: 0.3s;
-  border-radius: 50px;
-}
-
-.hero .hero-newsletter .newsletter-form input[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 20%);
 }
 
 .hero .social-links {
@@ -976,147 +731,4 @@ section,
 .hero .social-links a:hover {
   color: var(--accent-color);
   border-color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# About Section
---------------------------------------------------------------*/
-.about .content h3 {
-  font-weight: 700;
-  font-size: 34px;
-  margin-bottom: 30px;
-}
-
-.about .content p {
-  margin-bottom: 30px;
-}
-
-.about .content .about-btn {
-  padding: 8px 30px 9px 30px;
-  color: var(--accent-color);
-  border-radius: 50px;
-  transition: 0.3s;
-  text-transform: uppercase;
-  font-weight: 600;
-  font-size: 13px;
-  display: inline-flex;
-  align-items: center;
-  border: 2px solid var(--accent-color);
-}
-
-.about .content .about-btn i {
-  font-size: 16px;
-  padding-left: 5px;
-}
-
-.about .content .about-btn:hover {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.about .icon-box i {
-  font-size: 40px;
-  color: var(--accent-color);
-  margin-bottom: 10px;
-}
-
-.about .icon-box h4 {
-  font-size: 20px;
-  font-weight: 700;
-  margin: 0 0 10px 0;
-}
-
-.about .icon-box h4 a {
-  color: var(--heading-color);
-  transition: 0.3s;
-}
-
-.about .icon-box p {
-  font-size: 15px;
-  color: color-mix(in srgb, var(--default-color), transparent 40%);
-  margin-bottom: 0;
-}
-
-.about .icon-box:hover h4 a {
-  color: var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Contact Section
---------------------------------------------------------------*/
-.contact .info-item+.info-item {
-  margin-top: 40px;
-}
-
-.contact .info-item i {
-  color: var(--accent-color);
-  background: color-mix(in srgb, var(--accent-color), transparent 92%);
-  font-size: 20px;
-  width: 44px;
-  height: 44px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  transition: all 0.3s ease-in-out;
-  margin-right: 15px;
-}
-
-.contact .info-item h3 {
-  padding: 0;
-  font-size: 18px;
-  font-weight: 700;
-  margin-bottom: 5px;
-}
-
-.contact .info-item p {
-  padding: 0;
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.contact .info-item:hover i {
-  background: var(--accent-color);
-  color: var(--contrast-color);
-}
-
-.contact .php-email-form {
-  height: 100%;
-}
-
-.contact .php-email-form input[type=text],
-.contact .php-email-form input[type=email],
-.contact .php-email-form textarea {
-  font-size: 14px;
-  padding: 10px 15px;
-  box-shadow: none;
-  border-radius: 0;
-  color: var(--default-color);
-  background-color: color-mix(in srgb, var(--background-color), transparent 50%);
-  border-color: color-mix(in srgb, var(--default-color), transparent 80%);
-}
-
-.contact .php-email-form input[type=text]:focus,
-.contact .php-email-form input[type=email]:focus,
-.contact .php-email-form textarea:focus {
-  border-color: var(--accent-color);
-}
-
-.contact .php-email-form input[type=text]::placeholder,
-.contact .php-email-form input[type=email]::placeholder,
-.contact .php-email-form textarea::placeholder {
-  color: color-mix(in srgb, var(--default-color), transparent 70%);
-}
-
-.contact .php-email-form button[type=submit] {
-  color: var(--contrast-color);
-  background: var(--accent-color);
-  border: 0;
-  padding: 10px 30px;
-  transition: 0.4s;
-  border-radius: 50px;
-}
-
-.contact .php-email-form button[type=submit]:hover {
-  background: color-mix(in srgb, var(--accent-color), transparent 25%);
 }
